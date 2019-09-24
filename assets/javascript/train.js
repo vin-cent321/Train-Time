@@ -20,7 +20,7 @@ $("#add-train-btn").on("click", function (event) {
 
     var trainName = $("#train-name-input").val().trim();
     var trainDestination = $("#destination-input").val().trim();
-    var firstTrain = moment($("#first-input").val().trim(), "HH:mm").format("X");
+    var firstTrain = moment($("#first-input").val().trim(), "HH:mm").format("h:mm a");
     var trainFrequency = $("#min-input").val().trim();
 
     var newTrain = {
